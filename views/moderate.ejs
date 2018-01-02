@@ -1,0 +1,23 @@
+<% include template/head %>
+
+<!-- Header -->
+	<header id="header">
+		<h1>Moderate</h1>
+		<p>Login as an admin</a>.</p>
+	</header>
+
+<!-- Signup Form -->
+	<form id="signup-form" method="post" action="/moderate" style="display: block;" >
+		<input type="email" name="email" id="email" placeholder="Email Address" required/></br>
+		<input type="password" name="password" id="password" placeholder="Password" required/ style="margin: 0 0 0 0;"></br>
+		<input id="is_admin" name="is_admin" value="admin" type="checkbox" disabled>
+		<label for="is_admin">Is admin?</label style="margin: 0 0 0 0;" >
+		<input type="submit" value="Sign Up" />
+	</form>
+	<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+	<script src="javascripts/moderate.js"></script>
+
+<% include template/foot %>
