@@ -1,0 +1,30 @@
+<% include template/head %>
+
+<!-- Header -->
+	<header id="header">
+		<h1>Difficult</h1>
+		<p>Purchase a Audi for the price of a Toyota</a>.</p>
+	</header>
+
+<!-- Signup Form -->
+	<form id="signup-form" method="post" action="/moderate" style="display: block;" >
+	    <input type="radio" id="audi" name="contact" value="email" style="margin: 0 0 0 0;" required>
+	    <label for="audi" style="margin: 0 0 0 0;">Audi</label>
+
+	    <input type="radio" id="toyota" name="contact" value="phone">
+	    <label for="toyota">Toyota</label>
+
+	    <input type="radio" id="bmw" name="contact" value="mail">
+	    <label for="bmw">BMW</label></br></br>
+	    <p style="margin: 0 0 0 0;">Price:</p> 
+	    <input type="text" id="price" disabled style="margin: 0 0 0 0;"></input> <br>
+		<input type="submit" value="Sign Up" style="margin: 0 0 0 0;" />
+	</form>
+	<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+	<script src="javascripts/difficult.js"></script>
+	<script src="javascripts/md5.min.js"></script>
+
+<% include template/foot %>
